@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laza aplikacija</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="stylesheet" type="text/css" href="./styles/vehicles.css">
+        <link rel="stylesheet" type="text/css" href="./styles/vehicles-responsive.css">
+        <link rel="stylesheet" type="text/css" href="./styles/app-responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="bell-on">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+        </div>
+        <div id="bell-off">
+            <i class="fa fa-bell-slash-o" aria-hidden="true"></i>
+        </div>
+        <div id="burger" class="">
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+            <span id="line3" class="line"></span>
+        </div>
+        <div id="left-side" class="translate-150">
+            <div id="name">
+                <h5>Auto Škola</h5>
+                <img src="pictures/profile/pexels-photo-2379004.jpeg">
+                <p>Miroslav Skočajić <br> miroslav1977@gmail.com</p>
+            </div>
+            <div id="nav" class="height-0-850px">
+                <ul id="nav-list">
+                    <li class="nav-li li-clicked1"><a class="nav-a li-clicked2"></a></li>
+                    <li class="nav-li" id="li-hero"><a href="#" class="nav-a li-clicked1"><i class="fa fa-home" aria-hidden="true"></i><p>Početna</p></a></li>
+                    <li class="nav-li li-clicked1"><a href="#" class="nav-a li-clicked"><i class="fa fa-graduation-cap" aria-hidden="true"></i><p>Učenici</p></a></li>
+                    <li class="nav-li"><a href="#" class="nav-a"><i class="fa fa-user-o" aria-hidden="true"></i><p>Predavači</p></a></li>
+                    <li class="nav-li" id="li-vehicle"><a href="#" class="nav-a"><i class="fa fa-car" aria-hidden="true"></i><p>Vozila</p></a></li>
+                    <li class="nav-li"><a href="#" class="nav-a"><i class="fa fa-cogs" aria-hidden="true"></i><p>Podešavanja</p></a></li>
+                    <li class="nav-li"><a class="nav-a"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="modals" class="modals hiden">
+            <div id="student-modal" class="modal hiden">
+                <h3>Unesite podatke o učeniku</h3>
+                <div class="modal-x" id="student-modal-x">X</div>
+                <form class="modal-form">
+                    <input class="modal-form-input" type="text" placeholder="Ime" id="">
+                    <input class="modal-form-input" type="text" placeholder="Prezime" id="">
+                    <input class="modal-form-input" type="text" placeholder="Kategorija" id="" >
+                    <button class="modal-form-confirm-btn" type="submit">DODAJ</button>
+                </form>
+            </div>
+            <div id="instructor-modal" class="modal hiden">
+                <h3>Unesite podatke o instruktoru</h3>
+                <div class="modal-x" id="instructor-modal-x">X</div>
+                <form class="modal-form">
+                    <input class="modal-form-input" type="text" placeholder="Ime" id="">
+                    <input class="modal-form-input" type="text" placeholder="Prezime" id="">
+                    <input class="modal-form-input" type="text" placeholder="Kategorija" id="" >
+                    <button class="modal-form-confirm-btn">DODAJ</button>
+                </form>
+            </div>
+            <div id="vehicle-modal" class="modal hiden">
+                <h3>Unesite podatke o vozilu</h3>
+                <div class="modal-x" id="vehicle-modal-x">X</div>
+                <form class="modal-form">
+                    <input class="modal-form-input" type="text" placeholder="Marka" id="">
+                    <input class="modal-form-input" type="text" placeholder="Model" id="">
+                    <input class="modal-form-input" type="number" placeholder="Godiste" id="">
+                    <input class="modal-form-input" type="text" placeholder="Kategorija" id="" >
+                    <button class="modal-form-confirm-btn">DODAJ</button>
+                </form>
+            </div>
+            <div id="a-modal" class="modal hiden">
+                <h3>Unesite podatke o necemu</h3>
+                <div class="modal-x" id="a-modal-x">X</div>
+                <form class="modal-form">
+                    <input class="modal-form-input" type="text" placeholder="aaa" id="">
+                    <input class="modal-form-input" type="text" placeholder="bbb" id="">
+                    <input class="modal-form-input" type="text" placeholder="ccc" id="" >
+                    <button class="modal-form-confirm-btn">DODAJ</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="hero" class="hiden-element hiden">
+                <div id="statistics-conteiner">
+                    <div class="statistics">
+                        <div id="statistics-column-name">
+                            <p>Učenici</p>
+                            <p>Predavači</p>
+                            <p>Vozila</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-students">
+                            <p>15</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-instructor">
+                            <p>35</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-cars">
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="statistics none-500">
+                        <div id="statistics-column-name">
+                            <p>Učenici</p>
+                            <p>Predavači</p>
+                            <p>Vozila</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-students">
+                            <p>15</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-instructor">
+                            <p>35</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-cars">
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="statistics">
+                        <div id="statistics-column-name">
+                            <p>Učenici</p>
+                            <p>Predavači</p>
+                            <p>Vozila</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-students">
+                            <p>15</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-instructor">
+                            <p>35</p>
+                        </div>
+                        <div class="statistics-line" id="statistics-cars">
+                            <p>10</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-buttons">
+                    <div id="main-buttons-row-1">
+                        <div class="main-button" id="student-btn">
+                            <p class="plus">+</p>
+                            <div class="main-button-text">
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                <p>UČENIK</p>
+                            </div>
+                        </div>
+                        <div class="main-button" id="instructor-btn">
+                            <p class="plus">+</p>
+                            <div class="main-button-text">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                <p>PREDAVAČ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="main-buttons-row-2">
+                        <div class="main-button" id="vehicle-btn">
+                            <p class="plus">+</p>
+                            <div class="main-button-text">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <p>VOZILO</p>
+                            </div>
+                        </div>
+                        <div class="main-button" id="a-btn">
+                            <p class="plus">+</p>
+                            <div class="main-button-text">
+                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                <p>NEŠTO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="vehicles" class="hiden-element ">
+                <div class="vehicles-search-conteiner">
+                    <div class="vehicles-search-conteiner-inside">
+                        <div class="vehicles-search-by-registration">
+                            <input type="text" placeholder="BG 12345 AA" id="vehicles-search-by-registration-input">
+                        </div>
+                        <div class="vehicles-search-by-category">
+                                <select id="vehicles-search-by-category-select">
+                                    <option value="0">Kategorija</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="vehicles-search-conteiner-inside">
+                        <div class="vehicles-search-by-brand">
+                            <input type="text">
+                        </div>
+                        <div class="vehicles-search-by-model">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicles-driving-school-conteiner" id="vehicles-driving-school-conteiner">
+                    <template id="vehicle-driving-school-template">
+                        <div class="vehicle-driving-school" id="vehicle-driving-school">
+                            <div class="vehicle-driving-school-left-side">
+                                <img src="" class="vehicle-driving-school-left-side-img">
+                            </div>
+                            <div class="vehicle-driving-school-right-side">
+                                <div class="vehicle-driving-school-category none">
+                                    
+                                </div>
+                                <div class="vehicle-driving-school-model-brand">
+                                    <h3><span class="model"></span> <span class="brand"></span></h3>
+                                </div>
+                                <div class="vehicle-driving-school-registration">
+                                    <h3 class="vehicle-driving-school-registration-h3"></h3>
+                                    <p class="vehicle-driving-school-registration-h3-date"></p>
+                                </div>
+                                <div class="vehicle-driving-school-instructors">
+                                    <p>Instuktori</p>
+                                    <ul class="vehicle-driving-school-instructors-ul">
+
+                                    </ul>
+                                </div>
+                                <div class="vehicle-driving-school-technical-review">
+                                    <p>Tehnički pregled</p>
+                                    <div class="vehicle-driving-school-technical-review-div">
+                                        <h3 class="vehicle-driving-school-technical-review-h3"></h3>
+                                        <h3 class="vehicle-driving-school-technical-review-h3"></h3>
+                                    </div>
+                                </div>
+                                <div class="vehicle-driving-school-buttons">
+                                    <div class="vehicle-driving-school-button">
+                                        DUGME1
+                                    </div>
+                                    <div class="vehicle-driving-school-button">
+                                        DUGME2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <div id="notifications" class="translate150">
+            <div id="notifications-checkbox">
+                <form action="" class="notifications-form">
+                    <div id="notifications-checkbox-coll-1">
+                        <label class="form-control">
+                            <input type="checkbox" name="checkbox" />
+                            Registracija
+                          </label>
+                        
+                          <label class="form-control">
+                            <input type="checkbox" name="checkbox-checked" checked />
+                            Tehnički pregled
+                          </label>
+                    </div>
+                    <div id="notifications-checkbox-coll-2">
+                        <label class="form-control form-control--disabled">
+                            <input type="checkbox" name="checkbox-disabled" />
+                            Popravka
+                          </label>
+                        
+                          <label class="form-control form-control--disabled">
+                            <input type="checkbox" name="checkbox-disabled-checked" />
+                            Remont
+                          </label>
+                    </div>
+                  </form>
+            </div>
+            <div id="notifications-conteiner">
+                <div class="notification">
+                    <div class="notification-time">
+                        <p>21. 01. 2023</p>
+                    </div>
+                    <div class="notification-line">
+                        
+                    </div>
+                    <div class="notification-event">
+                        <div class="notification-event-text">
+                        <h5>Registracija</h5>
+                        <p>Škoda BG 1234 FE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-time">
+                        <p>11. 05. 2023</p>
+                    </div>
+                    <div class="notification-line">
+                        
+                    </div>
+                    <div class="notification-event">
+                        <div class="notification-event-text">
+                            <h5>Popravka</h5>
+                            <p>Škoda BG 1234 FE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-time">
+                        <p>10. 07. 2023</p>
+                    </div>
+                    <div class="notification-line">
+                        
+                    </div>
+                    <div class="notification-event">
+                        <div class="notification-event-text">
+                            <h5>Tehnički pregled</h5>
+                            <p>Škoda BG 1234 FE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-time">
+                        <p>10. 07. 2023</p>
+                    </div>
+                    <div class="notification-line">
+                        
+                    </div>
+                    <div class="notification-event">
+                        <div class="notification-event-text">
+                            <h5>Remont</h5>
+                            <p>Škoda BG 1234 FE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./js/app.js"></script>
+        <script src="./js/vehicles.js"></script>
+    </body>
+</html>

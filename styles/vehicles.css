@@ -1,0 +1,173 @@
+#vehicles{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s ease-out;
+}
+.vehicles-search-conteiner{
+    width: auto;
+    height: 20vh;
+    margin: 50px auto;
+    display: flex;
+}
+.vehicles-search-conteiner-inside{
+    display: flex;
+}
+.vehicles-search-conteiner input{
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: calc(.6vw + 8px);
+}
+.vehicles-search-by-registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.vehicles-search-by-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#vehicles-search-by-category-select{
+    font-size: calc(.6vw + 8px);
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.vehicles-search-by-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.vehicles-search-by-model{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.vehicles-driving-school-conteiner{
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.vehicle-driving-school{
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+    display: flex;
+    border: 2px solid rgb(96, 91, 227, .5);
+    box-shadow: -5px -5px 10px rgba(148, 146, 224, 0.3), 5px 5px 10px rgba(37, 34, 124, 0.35);
+    border-radius: 50px;
+}
+.vehicle-driving-school-left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 40%;
+}
+.vehicle-driving-school-left-side img{
+    width: 80%;
+}
+.vehicle-driving-school-right-side{
+    flex-grow: 1;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.vehicle-driving-school-model-brand{
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+}
+.vehicle-driving-school-model-brand h3{
+    font-size: calc(.6vw + 8px);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px 50px;
+    box-shadow: -5px -5px 10px rgba(148, 146, 224, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.3);
+}   
+.vehicle-driving-school-registration{
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+.vehicle-driving-school-registration h3{
+    padding: 12px 40px;
+    box-shadow: -5px -5px 10px rgba(148, 146, 224, 0.2), 5px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: calc(.6vw + 8px);
+}
+.vehicle-driving-school-registration p{
+    box-shadow: -5px -0px 10px rgba(148, 146, 224, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.vehicle-driving-school-instructors{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.vehicle-driving-school-instructors ul{
+    list-style: none;
+    line-height: 25px;
+    font-weight: 100;
+}
+.vehicle-driving-school-instructors ul li{
+    font-size: calc(.6vw + 8px);
+    font-weight: bold;
+}
+.vehicle-driving-school-technical-review{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.vehicle-driving-school-technical-review div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.vehicle-driving-school-technical-review p{
+    font-size: 18px;
+}
+.vehicle-driving-school-technical-review h3{
+    margin: 10px 0;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: calc(.8vw + 6px);
+    box-shadow: -5px -5px 10px rgba(148, 146, 224, 0.2), 5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.vehicle-driving-school-buttons{
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.vehicle-driving-school-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: calc(.6vw + 8px);
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: -5px -5px 10px rgba(148, 146, 224, 0.2), 5px 0px 10px rgba(0, 0, 0, 0.3);
+}

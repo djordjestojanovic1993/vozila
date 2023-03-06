@@ -1,0 +1,131 @@
+@media (max-width: 1440px){
+    .vehicle-driving-school-left-side img{
+        width: 90%;
+    }
+}
+@media (max-width: 1300px){
+    .vehicles-driving-school-conteiner{
+        width: 90%;
+    }
+}
+@media (max-width: 1100px){ 
+    .vehicle-driving-school{
+        min-height: 400px;
+    }
+    .vehicle-driving-school-technical-review div{
+        gap: 5px;
+    }
+    .vehicle-driving-school-technical-review h3{
+        font-size: calc(.6vw + 6px);
+        padding: 5px 20px;
+    }
+}
+@media (max-width: 1024px){
+    .vehicles-driving-school-conteiner{
+        width: 95%;
+    }
+    .vehicle-driving-school-left-side img{
+        width: 100%;
+    }
+    .vehicle-driving-school-right-side{
+        padding: 5% 0;
+        gap: 15px;
+    }
+}
+@media (max-width: 900px){
+    .vehicle-driving-school{
+        min-height: 430px;
+    }
+    .vehicle-driving-school-model-brand h3{
+        font-size: calc(.6vw + 10px);
+    }  
+    .vehicle-driving-school-registration h3{
+        font-size: calc(.6vw + 10px);
+    }
+    .vehicle-driving-school-instructors ul li{
+        font-size: calc(.6vw + 9px);
+    }
+    .vehicle-driving-school-technical-review h3{
+        font-size: calc(.6vw + 10px);
+    }
+    .vehicle-driving-school-button{
+        font-size: calc(.6vw + 10px);
+    }
+}
+@media (max-width: 850px){
+    .vehicles-driving-school-conteiner{
+        width: 80%;
+    }
+}
+@media (max-width: 768px){
+    .vehicles-search-conteiner input{
+        font-size: calc(.6vw + 10px);
+    }
+    #vehicles-search-by-category-select{
+        font-size: calc(.6vw + 10px);
+    }
+    .vehicles-driving-school-conteiner{
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
+    .vehicle-driving-school{
+        min-height: 380px;
+    }
+    .vehicle-driving-school-model-brand h3{
+        padding: 10px 40px;
+    }
+}
+@media (max-width: 550px){
+    .vehicles-search-conteiner input{
+        font-size: calc(.8vw + 10px);
+    }
+    #vehicles-search-by-category-select{
+        font-size: calc(.8vw + 10px);
+    }
+}
+@media (max-width: 500px){
+    .vehicles-search-conteiner{
+        flex-direction: column;
+        gap: 20px;
+        margin: 100px auto 50px auto;
+        height: fit-content;
+        width: 100%;
+    }
+    .vehicles-search-by-registration{
+        width: 50%;
+    }
+    .vehicles-search-by-category{
+        width: 50%;
+    }
+    #vehicles-search-by-category-select{
+        width: 90%;
+    }
+    .vehicle-driving-school-left-side{
+        width: 50%;
+    }
+    .vehicle-driving-school-right-side{
+        padding: 8% 0;
+        gap: 15px;
+    }
+    .vehicle-driving-school-registration p{
+        font-size: calc(.6vw + 10px);
+    }
+    .vehicle-driving-school-technical-review h3{
+        font-size: calc(.6vw + 9px);
+        padding: 5px 15px;
+    }
+}
+@media (max-width: 450px){
+    .vehicle-driving-school-right-side{
+        padding: 8% 3%;
+    }
+    .vehicle-driving-school-model-brand h3{
+        width: 90%;
+        text-align: center;
+        padding: 10px 0;
+    }  
+    .vehicle-driving-school-registration h3{
+        padding: 12px 35px;
+    }
+}
